@@ -21,7 +21,7 @@ export const typographyVariants = cva('text-xl', {
     },
   },
   defaultVariants: {
-    variant: 'h1',
+    variant: 'p',
     affects: 'default',
   },
 });

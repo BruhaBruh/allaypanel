@@ -1,9 +1,12 @@
+'use client';
+
 import { Container } from '@/client/components/ui';
 import { cn } from '@/client/lib/shadcn';
 import { Props } from '@/client/types/props';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 export const Header: React.FC<Props<'header'>> = ({ className, ...props }) => {
   return (
@@ -11,8 +14,9 @@ export const Header: React.FC<Props<'header'>> = ({ className, ...props }) => {
       color="secondary"
       inner={{
         asChild: true,
-        className: cn('h-20 py-0 flex items-center', className),
+        className: cn('h-20 py-0 flex items-center justify-between', className),
       }}
+      className="sticky top-0 z-10"
     >
       <header {...props}>
         <Link href="/" className="flex items-center justify-center gap-2">
@@ -25,6 +29,7 @@ export const Header: React.FC<Props<'header'>> = ({ className, ...props }) => {
             alt="Meerkat logo"
           />
         </Link>
+        <ThemeSwitcher />
       </header>
     </Container>
   );
