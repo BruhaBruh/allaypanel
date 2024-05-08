@@ -90,7 +90,8 @@
         ]
       }
     ],
-    "consistent-return": "off"
+    "consistent-return": "off",
+    "no-multiple-empty-lines": ["error", { "max": 1 }]
   },
   "settings": {
     "react": {
