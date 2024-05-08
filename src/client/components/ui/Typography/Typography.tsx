@@ -9,7 +9,6 @@ import { typographyVariants } from './Typography.variants';
 export const Typography: React.FC<TypographyProps> = ({
   className,
   variant,
-  affects,
   asChild = false,
   ref,
   ...props
@@ -18,7 +17,7 @@ export const Typography: React.FC<TypographyProps> = ({
 
   return (
     <Comp
-      className={cn(typographyVariants({ variant, affects, className }))}
+      className={cn(typographyVariants({ variant, className }))}
       ref={ref}
       {...props}
     />

@@ -16,6 +16,8 @@ export const containerVariants = cva('overflow-hidden', {
       'warning-inverse': 'bg-warning-foreground text-warning',
       destructive: 'bg-destructive text-destructive-foreground',
       'destructive-inverse': 'bg-destructive-foreground text-destructive',
+      info: 'bg-info text-info-foreground',
+      'info-inverse': 'bg-info-foreground text-info',
     },
   },
   defaultVariants: {

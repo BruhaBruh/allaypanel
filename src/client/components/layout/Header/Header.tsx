@@ -1,12 +1,11 @@
 'use client';
 
-import { Container } from '@/client/components/ui';
 import { cn } from '@/client/lib/shadcn';
 import { Props } from '@/client/types/props';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { ThemeSwitcher } from './ThemeSwitcher';
+import { Container } from '../Container';
 
 export const Header: React.FC<Props<'header'>> = ({ className, ...props }) => {
   return (
@@ -29,7 +28,6 @@ export const Header: React.FC<Props<'header'>> = ({ className, ...props }) => {
             alt="Meerkat logo"
           />
         </Link>
-        <ThemeSwitcher />
       </header>
     </Container>
   );

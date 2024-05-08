@@ -20,6 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
     <Comp
       className={cn(buttonVariants({ variant, size, className }))}
       ref={ref}
+      type="button"
       {...props}
     />
   );
